@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+/* 
+colors: #938686
+background: #05292E
+background: #062226 */
+.App{
+    background: #05292E;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.ram-frontImg{
+    width: 100%;
+}
+.container-ram{
+    max-width: 60rem;
+    margin: auto;
+    text-align: center;
+}
+.ram-title{
+    font-size: 4rem;
+    margin: 2rem 0 ;
+}
+
+.ram-form__input{
+    width: 90%;
+    height: 2rem;
+}
+.ram-form__btn{
+    width: 10%;
+    height: 2rem;
+    background-color: #062226;
+    color: #fff;
+    border-color: #fff;
+}
+
+.container-location{
+    margin: 2rem 0;
+}
+.location-title{
+    margin-bottom: 1rem;
+}
+.location-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ram-subtitle{
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* cardResident */
+.container-residents{
+    display:grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-auto-flow: dense;
+    gap: 2rem;
+}
+.container-card{
+    /* max-width: 30rem; */
+    position: relative;
+    background-color: #062226;
+}
+.card-img{
+    width: 100%;
+}
+.container-tagImg{
+    background-color: #062226;
+    position: absolute;
+    top: 2rem;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+}
+.tag__circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* background-color: red; */
+    margin: 0.5rem;
+}
+.tag__status{
+    margin: 0.5rem 1rem 0.5rem 0;
+}
+.container-card__info{
+    text-align: left;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+.card-info__title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+.card-info__list li{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.card-info__list li span{
+    color: #938686
+}
