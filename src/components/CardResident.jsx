@@ -6,9 +6,9 @@ const CardResident = ({ url }) => {
   const resident = useFetch(url)
 
   let colorStatus = {
-    dead: "red",
-    alive: "green",
-    unknow: "gray"
+    Dead: "red",
+    Alive: "green",
+    unknown: "gray"
   }
 
   return (
@@ -16,7 +16,7 @@ const CardResident = ({ url }) => {
       <header className='card-header'>
         <img className='card-img' src={resident?.image} alt={`image of ${resident?.name}`} />
         <div className='container-tagImg'>
-          <div className='tag__circle'style={{backgroundColor: colorStatus[`${resident?.status}`]}}></div>
+          <div className='tag__circle' style={{backgroundColor: colorStatus[`${resident?.status}`]}}></div>
           <span className='tag__status'>{resident?.status}</span>
         </div>
       </header>
